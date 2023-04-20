@@ -1,10 +1,6 @@
 import tkinter as tk
 from socketio.exceptions import ConnectionError
-import logging
 import socketio
-
-
-logging.basicConfig(level=logging.ERROR)
 
 
 class ChatWindow:
