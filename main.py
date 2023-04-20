@@ -3,7 +3,7 @@ from server.views import app
 from server.logcolors import Color
 
 
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, cors_allowed_origins="*", static_url_path='/server/static')
 
 @socketio.on('connect')
 def handle_connect():
